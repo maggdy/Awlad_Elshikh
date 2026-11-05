@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f5">
+  <meta name="description" content="منيو المطعم - تصفح الأصناف واطلب عبر واتساب">
+  <title>منيو المطعم</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-shade"></div>
+    <div class="hero-content">
+      <div class="brand-mark">م</div>
+      <p class="eyebrow">أهلاً بيك في</p>
+      <h1 id="restaurant-name">مطعم الذوق</h1>
+      <p id="restaurant-tagline">طعم تحبه.. وتجربة تستاهلها</p>
+      <div class="hero-meta"><span>✦ طازة يوميًا</span><span>•</span><span>✦ معمول بحب</span></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <div>
+        <p class="section-kicker">اختار اللي على مزاجك</p>
+        <h2>منيو اليوم</h2>
+      </div>
+      <span class="open-pill"><i></i> بنستقبل طلباتك</span>
+    </section>
+
+    <label class="search-box">
+      <span aria-hidden="true">⌕</span>
+      <input id="search-input" type="search" placeholder="بتدور على إيه؟" autocomplete="off">
+    </label>
+
+    <nav id="category-list" class="category-list" aria-label="أقسام المنيو"></nav>
+    <section id="menu-grid" class="menu-grid" aria-live="polite"></section>
+    <p id="empty-state" class="empty-state" hidden>مفيش أصناف مطابقة لبحثك.</p>
+  </main>
+
+  <aside id="cart-bar" class="cart-bar" hidden>
+    <div class="cart-summary">
+      <span class="cart-count" id="cart-count">0</span>
+      <div><strong>طلبك</strong><small id="cart-total">0 ج.م</small></div>
+    </div>
+    <button id="checkout-button" class="checkout-button">اطلب عبر واتساب <span>←</span></button>
+  </aside>
+
+  <footer class="footer">
+    <p id="footer-name">مطعم الذوق</p>
+    <span>نسعد بزيارتك دائمًا ♡</span>
+  </footer>
+
+  <script src="menu-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
