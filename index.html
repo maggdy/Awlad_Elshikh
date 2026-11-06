@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f8f5">
-  <meta name="description" content="منيو المطعم - تصفح الأصناف واطلب عبر واتساب">
-  <title>منيو المطعم</title>
+  <meta name="theme-color" content="#5a1912">
+  <meta name="description" content="منيو بيتزا وكريب أولاد الشيخ - إمبابة - تصفح الأصناف واطلب عبر واتساب">
+  <title>أولاد الشيخ | المنيو</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="hero">
-    <div class="hero-shade"></div>
     <div class="hero-content">
-      <div class="brand-mark">م</div>
       <p class="eyebrow">أهلاً بيك في</p>
-      <h1 id="restaurant-name">مطعم الذوق</h1>
-      <p id="restaurant-tagline">طعم تحبه.. وتجربة تستاهلها</p>
-      <div class="hero-meta"><span>✦ طازة يوميًا</span><span>•</span><span>✦ معمول بحب</span></div>
+      <p class="kicker">بيتزا وكريب</p>
+      <h1 id="restaurant-name">أولاد الشيخ</h1>
+      <p id="restaurant-tagline" class="tagline"></p>
+      <div class="hero-meta"><span>🛵 خدمة توصيل 24 ساعة</span><span>للمنازل والشركات والمكاتب والمصانع</span></div>
+      <div id="call-buttons" class="call-buttons"></div>
     </div>
   </header>
 
@@ -27,7 +27,7 @@
     <section class="intro">
       <div>
         <p class="section-kicker">اختار اللي على مزاجك</p>
-        <h2>منيو اليوم</h2>
+        <h2>المنيو</h2>
       </div>
       <span class="open-pill"><i></i> بنستقبل طلباتك</span>
     </section>
@@ -38,7 +38,7 @@
     </label>
 
     <nav id="category-list" class="category-list" aria-label="أقسام المنيو"></nav>
-    <section id="menu-grid" class="menu-grid" aria-live="polite"></section>
+    <div id="menu-grid" aria-live="polite"></div>
     <p id="empty-state" class="empty-state" hidden>مفيش أصناف مطابقة لبحثك.</p>
   </main>
 
@@ -51,8 +51,8 @@
   </aside>
 
   <footer class="footer">
-    <p id="footer-name">مطعم الذوق</p>
-    <span>نسعد بزيارتك دائمًا ♡</span>
+    <p id="footer-name">أولاد الشيخ</p>
+    <span id="footer-address"></span>
   </footer>
 
   <script src="menu-data.js"></script>
