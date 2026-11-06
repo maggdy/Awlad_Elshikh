@@ -119,7 +119,7 @@
         total += item.price * quantity;
       }
     });
-    lines.push("", "الإجمالي: " + money(total), "", "الاسم:"  ,"رقم الهاتف:" , "العنوان:");
+    lines.push("", "الإجمالي: " + money(total), "رقم الهاتف:", "الاسم:"  ,"رقم الهاتف:" , "العنوان:");
     const url = "https://wa.me/" + number + "?text=" + encodeURIComponent(lines.join("\n"));
     window.open(url, "_blank", "noopener");
   });
