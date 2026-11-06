@@ -156,7 +156,7 @@
         total += l.opt.price * quantity;
       }
     });
-    lines.push("", "الإجمالي: " + money(total), "", "الاسم:", "العنوان:");
+    lines.push("", "الإجمالي: " + money(total), "", "الاسم: ", "\nرقم الهاتف: ", "\nالعنوان: ");
     const url = "https://wa.me/" + number + "?text=" + encodeURIComponent(lines.join("\n"));
     window.open(url, "_blank", "noopener");
   });
